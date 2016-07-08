@@ -1,0 +1,26 @@
+<p>
+<strong>Name:</strong>
+<%= @restraurant.name %>
+</p>
+
+<p>
+<strong>Description:</strong>
+<%= @restraurant.description %>
+</p>
+
+<p>
+<strong>Address:</strong>
+<%= @restraurant.address %>
+</p>
+
+<p>
+<strong>Phone:</strong>
+<%= @restaurant.phone %>
+</p>
+
+<%= link_to 'Edit', edit_restaurant_path(@restaurant) %>
+<%= link_to 'Delete', restaurant_path(@restaurant), method: :delete %>
+
+<iframe src="https://www.google.com/maps/embed/v1/place?key=AlzaSyD5nt-kaFLNPJ4eifWEBOKyplZFE35MZ6E&q=<%= @restaurant.address %>">
+	
+</iframe>
